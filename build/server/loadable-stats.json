@@ -1,0 +1,625 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.44.2",
+  "hash": "c29c5e9d61773ea8f2ec",
+  "publicPath": "/static/",
+  "outputPath": "/Users/ghassanaldarwish/Desktop/gbruv/build/server",
+  "assetsByChunkName": {
+    "server": [
+      "server.31bd16c8d60ba351f17a.css",
+      "server.js"
+    ]
+  },
+  "assets": [
+    {
+      "name": "locales/de_DE/test.json",
+      "size": 21,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "copied": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "locales/de_DE/translation.json",
+      "size": 278,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "copied": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "locales/de_DE/translation.missing.json",
+      "size": 3,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "copied": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "locales/en_US/test.json",
+      "size": 21,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "copied": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "locales/en_US/translation.json",
+      "size": 259,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "copied": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "locales/en_US/translation.missing.json",
+      "size": 3,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "copied": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "server.31bd16c8d60ba351f17a.css",
+      "size": 329859,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "server"
+      ],
+      "info": {
+        "immutable": true,
+        "related": {
+          "brotliCompressed": "server.31bd16c8d60ba351f17a.css.br",
+          "gziped": "server.31bd16c8d60ba351f17a.css.gz"
+        }
+      },
+      "emitted": false
+    },
+    {
+      "name": "server.31bd16c8d60ba351f17a.css.br",
+      "size": 38839,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "compressed": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "server.31bd16c8d60ba351f17a.css.gz",
+      "size": 49234,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "compressed": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "server.js",
+      "size": 138698,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "server"
+      ],
+      "info": {
+        "related": {
+          "brotliCompressed": "server.js.br",
+          "gziped": "server.js.gz"
+        }
+      },
+      "emitted": false
+    },
+    {
+      "name": "server.js.br",
+      "size": 38634,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "compressed": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "server.js.gz",
+      "size": 44567,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "compressed": true
+      },
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "server": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "server.31bd16c8d60ba351f17a.css",
+        "server.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "server": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "server.31bd16c8d60ba351f17a.css",
+        "server.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    },
+    "copy-webpack-plugin": {
+      "entries": [
+        {
+          "type": "log",
+          "message": "begin globbing \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/**/*\" with a context of \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales\""
+        },
+        {
+          "type": "log",
+          "message": "determined that \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/de_DE/test.json\" should write to \"locales/de_DE/test.json\""
+        },
+        {
+          "type": "log",
+          "message": "determined that \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/de_DE/translation.json\" should write to \"locales/de_DE/translation.json\""
+        },
+        {
+          "type": "log",
+          "message": "determined that \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/de_DE/translation.missing.json\" should write to \"locales/de_DE/translation.missing.json\""
+        },
+        {
+          "type": "log",
+          "message": "determined that \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/en_US/test.json\" should write to \"locales/en_US/test.json\""
+        },
+        {
+          "type": "log",
+          "message": "determined that \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/en_US/translation.json\" should write to \"locales/en_US/translation.json\""
+        },
+        {
+          "type": "log",
+          "message": "determined that \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/en_US/translation.missing.json\" should write to \"locales/en_US/translation.missing.json\""
+        },
+        {
+          "type": "log",
+          "message": "writing \"locales/de_DE/test.json\" to compilation assets from \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/de_DE/test.json\""
+        },
+        {
+          "type": "log",
+          "message": "writing \"locales/de_DE/translation.json\" to compilation assets from \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/de_DE/translation.json\""
+        },
+        {
+          "type": "log",
+          "message": "writing \"locales/de_DE/translation.missing.json\" to compilation assets from \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/de_DE/translation.missing.json\""
+        },
+        {
+          "type": "log",
+          "message": "writing \"locales/en_US/test.json\" to compilation assets from \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/en_US/test.json\""
+        },
+        {
+          "type": "log",
+          "message": "writing \"locales/en_US/translation.json\" to compilation assets from \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/en_US/translation.json\""
+        },
+        {
+          "type": "log",
+          "message": "writing \"locales/en_US/translation.missing.json\" to compilation assets from \"/Users/ghassanaldarwish/Desktop/gbruv/src/shared/i18n/locales/en_US/translation.missing.json\""
+        }
+      ],
+      "filteredEntries": 18,
+      "debug": false
+    }
+  },
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/static/",
+      "outputPath": "/Users/ghassanaldarwish/Desktop/gbruv/build/server",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/react-accessible-accordion/dist/fancy-example.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/static/",
+      "outputPath": "/Users/ghassanaldarwish/Desktop/gbruv/build/server",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/react-image-lightbox/style.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/static/",
+      "outputPath": "/Users/ghassanaldarwish/Desktop/gbruv/build/server",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/react-toastify/dist/ReactToastify.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/static/",
+      "outputPath": "/Users/ghassanaldarwish/Desktop/gbruv/build/server",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/slick-carousel/slick/slick-theme.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/static/",
+      "outputPath": "/Users/ghassanaldarwish/Desktop/gbruv/build/server",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/slick-carousel/slick/slick.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/static/",
+      "outputPath": "/Users/ghassanaldarwish/Desktop/gbruv/build/server",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!src/shared/assets/styles/animate.min.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/static/",
+      "outputPath": "/Users/ghassanaldarwish/Desktop/gbruv/build/server",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!src/shared/assets/styles/bootstrap.min.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/static/",
+      "outputPath": "/Users/ghassanaldarwish/Desktop/gbruv/build/server",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!src/shared/assets/styles/fontawesome.min.css"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/static/",
+      "outputPath": "/Users/ghassanaldarwish/Desktop/gbruv/build/server",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!src/shared/assets/styles/responsive.css"
+    }
+  ]
+}
