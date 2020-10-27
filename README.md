@@ -1,39 +1,5 @@
 # ⚛ React + Express – SSR Setup with TypeScript
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/085d871cd62fe4435865/maintainability)](https://codeclimate.com/github/manuelbieh/react-ssr-setup/maintainability)
-[![dependencies Status](https://david-dm.org/manuelbieh/react-ssr-setup/status.svg)](https://david-dm.org/manuelbieh/react-ssr-setup)
-[![Known Vulnerabilities](https://snyk.io/test/github/manuelbieh/react-ssr-setup/badge.svg)](https://snyk.io/test/github/manuelbieh/react-ssr-setup)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![CircleCI](https://circleci.com/gh/manuelbieh/react-ssr-setup/tree/master.svg?style=svg)](https://circleci.com/gh/manuelbieh/react-ssr-setup/tree/master)
-
-**Advertising**: I wrote a book about React. There's a German and an English version. Buy one if you like this project and you want to support my work!
-
-| **English**                                                                           | **German**                                                                        |
-| ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [![English](./src/shared/assets/book-cover-en-small.png)](https://book.react-js.dev/) | [![German](./src/shared/assets/book-cover-small.png)](https://buch.react-js.dev/) |
-
-**New!** You can now use this project as template! [Click here to create a new repo on GitHub with this project as template.](https://github.com/manuelbieh/react-ssr-setup/generate)
-
-## TOC
-
-- [Motivation](#motivation)
-- [Goals](#goals)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Tricks](#tricks)
-  - [Client side version (opt-in)](#client-side-version-opt-in)
-  - [Component scaffolding using plop](#client-side-version-opt-in)
-  - [📕 Storybook support](#-storybook-support)
-  - [Keep your project up to date](#keep-your-project-up-to-date)
-  - [Avoid source map generation for faster builds](#avoid-source-map-generation-for-faster-builds)
-  - [Change the port of the dev environment](#change-the-port-of-the-dev-environment)
-  - [Import SVGs as ReactComponent](#import-svgs-as-reactcomponent)
-  - [Use plain JavaScript instead of TypeScript](#use-plain-javascript-instead-of-typescript)
-- [Caveats](#caveats)
-- [Todo](#todo)
-- [Changelog](#changelog)
-
 ## Motivation
 
 This is just another React Starter Project as there are literally [hundreds of others out there](https://www.javascriptstuff.com/react-starter-projects/). The reason I created this one was to have one central repo I can base my own future projects on, which contains most of the packages I usually use, is easily extendable, easy to understand, supports server side rendering, and uses all the configs and settings I made good experiences with in the past.
@@ -58,18 +24,18 @@ This project has out-of-the-box support for the following things:
 
   - 🔥 Babel 7
   - 📦 Webpack 4
-  - 🔥 ESLint 7 (with a set of custom rules which may be mostly identical to AirBnB with some personal flavor added)
+  - 🔥 ESLint 6 (with a set of custom rules which may be mostly identical to AirBnB with some personal flavor added)
   - 🔥 TypeScript (via Babel)
   - 🔥 Prettier
-  - 🔥 Jest
+  - 🔥 Jest 24
   - 🐐 React Testing Library
   - ✅ React i18next for multi language support
   - ✅ Server Side Rendering with Express
-  - 🏎 React Fast Refresh
+  - ✅ Hot Module Reloading (HMR)
   - ✅ CSS Modules
   - ✅ PostCSS
   - ✅ Precommit hooks via lint-staged + Husky
-  - ✅ Optional static build without the need for Node.js on the server
+  - ✅ Optional static deployment without the need for Node.js on the server
   - 📕 Support for [Storybook](https://storybook.js.org/) (>= 5.0.0)
 
 - Libs and Dependencies
@@ -208,9 +174,6 @@ This project comes with i18n support out of the box. It's using i18next and reac
 You have to define two new env variables to be able to import/export translations to/from Lokalise: `LOKALISE_TOKEN` and `LOKALISE_PROJECT_ID`. Afterwards you can create new translations via their web interface or collect all static translation strings from your app using `yarn i18n:scan` and then push them to Lokalise using `yarn i18n:push`.
 -->
 
-<!--
-This following section is no longer fully true since I decided to go all-in on TypeScript. I leave it in here for now for historical reasons.
-
 ### Use plain JavaScript instead of TypeScript
 
 You can just do it‬™. Really. Name your files `.js` instead of `.ts`/`.tsx` and you should not be bothered by TypeScript anymore. If you want to _fully_ remove TypeScript:
@@ -222,7 +185,6 @@ You can just do it‬™. Really. Name your files `.js` instead of `.ts`/`.tsx` 
 - remove `wiremore/typescript` from the `extends` section in `.eslintrc.js`
 - remove all types from all files if there still are any
 - remove `tsConfig` option from `.dependency-cruiser.js`
--->
 
 ## Caveats
 
@@ -246,7 +208,6 @@ You can just do it‬™. Really. Name your files `.js` instead of `.ts`/`.tsx` 
 - [x] Modify ~~`svg-loader`~~ `babel-loader` so SVGs can be imported as React component (see CRA 2)
 - [ ] Add proper [offline support using Workbox](https://webpack.js.org/guides/progressive-web-application/)
 - [ ] Document i18n functionality (scan, pull, push, ...)
-- [ ] Move i18n scripts to an external package to clean up the dependency tree
 - [ ] Fine tuning different minor things (ongoing task)
 
 ## Changelog

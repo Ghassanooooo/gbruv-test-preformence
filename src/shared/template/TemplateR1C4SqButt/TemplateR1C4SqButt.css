@@ -1,0 +1,37 @@
+.TemplateTopStores {
+}
+
+.TemplateTopStores .ui.card {
+    margin: auto !important;
+}
+
+.TemplateTopStores .BindTow {
+    border: 1px solid blue;
+    padding: 25px;
+}
+
+.ComponentCardShadowRow {
+    padding-top: 1px !important;
+}
+
+.TemplateTopStores .ui.basic.buttons {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.TemplateTopStores .ui.table tr td,
+.TemplateTopStores .ui.table {
+    padding: 0;
+    border: none !important;
+}
+
+.ComponentHeaderCardRow {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.FlexColumn {
+    display: flex;
+    flex-direction: column;
+}

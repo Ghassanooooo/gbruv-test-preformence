@@ -1,0 +1,43 @@
+.Component {
+    position: relative;
+}
+
+.OverComponent {
+    border: 1px solid red;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.OverComponent {
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    position: absolute;
+    /* display: none; */
+    border: 2px solid red;
+}
+
+.OverComponentPopup {
+    border-radius: 0;
+    opacity: 0.9;
+    padding: 2em;
+}
+
+.OverComponentEditButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* .ComponentUxManager:hover .OverComponent {
+    display: block;
+} */
+
+.OverComponentName {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 25px;
+    background-color: green;
+}

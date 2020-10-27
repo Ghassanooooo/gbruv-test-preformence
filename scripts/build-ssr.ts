@@ -14,7 +14,7 @@ const generateStaticHTML = async () => {
     const nodemon = require('nodemon');
     const fs = require('fs');
     const puppeteer = require('puppeteer');
-    const PORT = await choosePort('localhost', 8505);
+    const PORT = await choosePort('localhost', 3000);
 
     process.env.PORT = String(PORT);
 

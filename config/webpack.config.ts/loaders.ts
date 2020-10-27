@@ -1,16 +1,23 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import getCSSModuleLocalIdent from 'react-dev-utils/getCSSModuleLocalIdent';
-
 const generateSourceMap = process.env.OMIT_SOURCEMAP === 'true' ? false : true;
 
-const cssRegex = /\.css$/;
-const cssModuleRegex = /\.module\.css$/;
+const cssRegex = /\.s?css$/;
+const cssModuleRegex = /\.module\.s?css$/;
 
-const isProd = process.env.NODE_ENV === 'production';
-
-const cssModuleOptions = isProd
-    ? { localIdentName: '[hash:base64:8]' }
-    : { getLocalIdent: getCSSModuleLocalIdent };
+// temporary wrapper function around getCSSModuleLocalIdent until this issue is resolved:
+// https://github.com/webpack-contrib/css-loader/pull/965
+const getLocalIdentWorkaround = (
+    context: any,
+    localIdentName: any,
+    localName: any,
+    options: any
+) => {
+    if (options && options.context === null) {
+        options.context = undefined;
+    }
+    return getCSSModuleLocalIdent(context, localIdentName, localName, options);
+};
 
 const babelLoader = {
     test: /\.(js|jsx|ts|tsx)$/,
@@ -44,15 +51,26 @@ const cssModuleLoaderClient = {
             loader: require.resolve('css-loader'),
             options: {
                 localsConvention: 'camelCase',
-                modules: cssModuleOptions,
+                modules: {
+                    // getLocalIdent: getCSSModuleLocalIdent,
+                    getLocalIdent: getLocalIdentWorkaround,
+                },
                 importLoaders: 1,
                 sourceMap: generateSourceMap,
+                // localIdentName: '[name]__[local]--[hash:base64:5]',
+                // getLocalIdent: getCSSModuleLocalIdent,
             },
         },
         {
             loader: require.resolve('postcss-loader'),
             options: {
                 sourceMap: generateSourceMap,
+            },
+        },
+        {
+            loader: require.resolve('sass-loader'),
+            options: {
+                sourceMap: true,
             },
         },
     ],
@@ -71,6 +89,12 @@ const cssLoaderClient = {
                 sourceMap: generateSourceMap,
             },
         },
+        {
+            loader: require.resolve('sass-loader'),
+            options: {
+                sourceMap: true,
+            },
+        },
     ],
 };
 
@@ -83,7 +107,10 @@ const cssModuleLoaderServer = {
                 onlyLocals: true,
                 localsConvention: 'camelCase',
                 importLoaders: 1,
-                modules: cssModuleOptions,
+                modules: {
+                    // getLocalIdent: getCSSModuleLocalIdent,
+                    getLocalIdent: getLocalIdentWorkaround,
+                },
             },
         },
         {
@@ -92,13 +119,24 @@ const cssModuleLoaderServer = {
                 sourceMap: generateSourceMap,
             },
         },
+        {
+            loader: require.resolve('sass-loader'),
+            options: {
+                sourceMap: true,
+            },
+        },
     ],
 };
 
 const cssLoaderServer = {
     test: cssRegex,
     exclude: cssModuleRegex,
-    use: [MiniCssExtractPlugin.loader, require.resolve('css-loader')],
+    use: [
+        MiniCssExtractPlugin.loader,
+        require.resolve('css-loader'),
+        require.resolve('postcss-loader'),
+        require.resolve('sass-loader'),
+    ],
 };
 
 const urlLoaderClient = {
@@ -119,7 +157,7 @@ const urlLoaderServer = {
 };
 
 const fileLoaderClient = {
-    exclude: [/\.(js|jsx|ts|tsx|css|mjs|html|ejs|json)$/],
+    exclude: [/\.(js|jsx|ts|tsx|css|mjs|html|ejs|json|scss)$/],
     use: [
         {
             loader: require.resolve('file-loader'),
@@ -131,7 +169,7 @@ const fileLoaderClient = {
 };
 
 const fileLoaderServer = {
-    exclude: [/\.(js|tsx|ts|tsx|css|mjs|html|ejs|json)$/],
+    exclude: [/\.(js|tsx|ts|tsx|css|mjs|html|ejs|json|scss)$/],
     use: [
         {
             loader: require.resolve('file-loader'),

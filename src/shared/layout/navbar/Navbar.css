@@ -1,0 +1,114 @@
+.faArrowDown {
+    padding: 4px;
+}
+
+.MainNavbar {
+    height: 65px;
+    border-top: 1px solid;
+    border-bottom: 0.5px solid;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.MainNavbar .Logo,
+.MainNavbar .Language {
+    margin: auto;
+}
+
+.MainNavbar .ui.selection.dropdown {
+    background: none;
+    border: none;
+    min-width: auto;
+}
+
+.MainNavbar .ui.selection.dropdown .default {
+    color: black;
+}
+
+.MainNavbarItems {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+}
+
+.MainNavbarItem {
+    margin: 7px;
+    padding: 7px;
+    font-size: 16px;
+    position: relative;
+
+    z-index: 100000000;
+    height: 49px;
+    margin-bottom: 0;
+    transition: border 0.1s ease-in-out;
+}
+
+.MainNavbarItem:hover {
+    border-bottom: 4.5px solid black;
+}
+
+.MainNavbarDropdownDisplayFlex {
+    opacity: 1;
+    z-index: 1000000 !important;
+}
+
+.MainNavbarDropdownDisplayNone {
+    z-index: -1 !important;
+    opacity: 0;
+}
+
+.MainNavbarDropdown {
+    width: 100%;
+    height: 300px;
+    top: 45px;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    display: flex !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.MainNavbarDropdownLayout {
+    border-top: 0.5px solid;
+    border-bottom: 0.5px solid;
+
+    width: 100%;
+    margin-top: 16px;
+}
+
+.MainNavbarDropdown:hover {
+    opacity: 1;
+    z-index: 1000000 !important;
+}
+
+.MainNavbarDropdownItems {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    min-height: 100%;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.MainNavbarDropdownItemsHeader {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 0;
+}
+
+.MainNavbarDropdownItem {
+    padding-bottom: 5px;
+    color: #00000082;
+    transition: color 0.3s;
+    display: block !important;
+}
+
+.MainNavbarDropdownItem:hover,
+.MainNavbarItem:hover {
+    color: #0a76cb;
+    cursor: pointer;
+}
